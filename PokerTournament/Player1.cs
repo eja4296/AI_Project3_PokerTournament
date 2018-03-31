@@ -61,21 +61,114 @@ namespace PokerTournament
                 // 1 Pair
                 case 2:
                     // Find the location of the pair
+                    int pairOneInd = 0;
+                    int pairTwoInd = 0;
+                    for (int x = 0; x < hand.Length; x++)
+                    {
+                        for (int y = 0; y < hand.Length; y++)
+                        {
+                            if (y != x && hand[y].Value == hand[x].Value)
+                            {
+                                pairOneInd = x;
+                                pairTwoInd = y;
+                            }
+                        }
+                    }
+
                     // Find the highest non-pair card
+                    int compareValue = 0;
+                    int highInd = 0;
+                    for (int i = 0; i < hand.Length; i++)
+                    {
+                        if (i != pairOneInd && i != pairTwoInd && hand[i].Value > compareValue)
+                        {
+                            compareValue = hand[i].Value;
+                            highInd = i;
+                        }
+                    }
+
                     // If it's over 10, keep it and discard rest, if not, discard everything that isn't the pair
+                    if (compareValue > 10)
+                    {
+                        for (int i = 0; i < hand.Length; i++)
+                        {
+                            if (i != pairOneInd && i != pairTwoInd && i != highInd)
+                            {
+                                hand[i] = null;
+                            }
+                        }
+                        cardsToDraw = 2;
+                    }
+                    else
+                    {
+                        for (int i = 0; i < hand.Length; i++)
+                        {
+                            if (i != pairOneInd && i != pairTwoInd)
+                            {
+                                hand[i] = null;
+                            }
+                        }
+                        cardsToDraw = 3;
+                    }
                     break;
 
                 // 2 Pair
                 case 3:
-                    // Find the location of the pairs
-                    // Discard the other card
+                    // Find the location of non-pair card and discard
+                    bool match;
+                    int currTestInd = -1;
+                    do
+                    {
+                        match = false;
+                        currTestInd++;
+                        for (int i = 0; i < hand.Length; i++)
+                        {
+                            if (hand[currTestInd].Value == hand[i].Value)
+                            {
+                                match = true;
+                            }
+                        }
+                    }
+                    while (match == true);
+
+                    hand[currTestInd] = null;
+                    cardsToDraw = 1;
+
                     break;
 
                 // 3 of a kind
                 case 4:
-                    // Find the location of the three
-                    // Find the highest non-three card
-                    // If it's over 10, keep it and discard other, if not, discard everything that isn't the three
+                    // Find the location of non-three cards
+                    int notMatchingOne = -1;
+                    int notMatchingTwo = -1;
+
+                    for (int x = 0; x < hand.Length; x++)
+                    {
+                        match = false;
+                        for (int y = 0; y < hand.Length; y++)
+                        {
+                            if (hand[x].Value == hand[y].Value)
+                            {
+                                match = true;
+                            }
+                        }
+                        if (match == false)
+                        {
+                            if (notMatchingOne == -1)
+                            {
+                                notMatchingOne = x;
+                            }
+                            else
+                            {
+                                notMatchingTwo = x;
+                            }
+                        }
+                    }
+
+                    // Discard both
+                    hand[notMatchingOne] = null;
+                    hand[notMatchingTwo] = null;
+                    cardsToDraw = 2;
                     break;
 
                 // Straight
@@ -98,8 +191,31 @@ namespace PokerTournament
 
                 // Four of a Kind
                 case 8:
-                    // Find the 4 cards
-                    // Discard the other
+                    // Find the location of non-pair card and discard
+                    currTestInd = -1;
+                    do
+                    {
+                        match = false;
+                        currTestInd++;
+                        for (int i = 0; i < hand.Length; i++)
+                        {
+                            if (hand[currTestInd].Value == hand[i].Value)
+                            {
+                                match = true;
+                            }
+                        }
+                    }
+                    while (match == true);
+
+                    if (hand[currTestInd].Value > 10)
+                    {
+                        cardsToDraw = 0;
+                    }
+                    else
+                    {
+                        hand[currTestInd] = null;
+                        cardsToDraw = 1;
+                    }
                     break;
 
                 // Straight Flush
