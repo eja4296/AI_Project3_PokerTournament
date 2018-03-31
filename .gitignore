@@ -13,16 +13,16 @@
 *.userprefs
 
 # Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-bld/
-[Bb]in/
-[Oo]bj/
-[Ll]og/
+PokerTournament/[Dd]ebug/
+PokerTournament/[Dd]ebugPublic/
+PokerTournament/[Rr]elease/
+PokerTournament/[Rr]eleases/
+PokerTournament/x64/
+PokerTournament/x86/
+PokerTournament/bld/
+PokerTournament/[Bb]in/
+PokerTournament/[Oo]bj/
+PokerTournament/[Ll]og/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
