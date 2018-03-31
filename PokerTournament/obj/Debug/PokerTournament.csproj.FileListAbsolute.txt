@@ -34,3 +34,6 @@ D:\AI_Project3\PokerTournament\bin\Debug\PokerTournament.pdb
 D:\AI_Project3\PokerTournament\obj\Debug\PokerTournament.csprojResolveAssemblyReference.cache
 D:\AI_Project3\PokerTournament\obj\Debug\PokerTournament.exe
 D:\AI_Project3\PokerTournament\obj\Debug\PokerTournament.pdb
+E:\Git\Poker\PokerTournament\bin\Debug\PokerTournament.exe.config
+E:\Git\Poker\PokerTournament\obj\Debug\PokerTournament.exe
+E:\Git\Poker\PokerTournament\obj\Debug\PokerTournament.pdb
