@@ -1,0 +1,1998 @@
+Starting round 1
+Ante for this round: 10
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 44
+ 
+Player5 folded. Other player gets the pot of 44
+
+After round 1, player status: 
+ Name: Player7 Dealer: True Money: 1020
+ Name: Player5 Dealer: False Money: 980
+ 
+Starting round 2
+Ante for this round: 10
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 30
+ 
+Player7 folded. Other player gets the pot of 30
+
+After round 2, player status: 
+ Name: Player7 Dealer: False Money: 1010
+ Name: Player5 Dealer: True Money: 990
+ 
+Starting round 3
+Ante for this round: 10
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 44
+ 
+Name: Player5
+Hand Rank: 2 
+Four of Clubs Four of Hearts Five of Clubs Eight of Hearts Jack of Hearts 
+
+ 
+Name: Player7
+Hand Rank: 1 
+Seven of Hearts Nine of Hearts Ten of Hearts King of Diamonds Ace of Hearts 
+
+ 
+Betting round 2:
+Player: Player5 Action Phase: Bet2 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 66
+ 
+Player5 folded. Other player gets the pot of 66
+
+After round 3, player status: 
+ Name: Player7 Dealer: True Money: 1042
+ Name: Player5 Dealer: False Money: 958
+ 
+Starting round 4
+Ante for this round: 10
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 34
+ 
+Name: Player7
+Hand Rank: 2 
+Four of Diamonds Four of Spades Five of Diamonds Eight of Spades Ace of Clubs 
+
+ 
+Name: Player5
+Hand Rank: 4 
+Three of Diamonds Six of Spades Queen of Hearts Queen of Diamonds Queen of Spades 
+
+ 
+Betting round 2:
+Player: Player7 Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 42
+ 
+Player5 folded. Other player gets the pot of 42
+
+After round 4, player status: 
+ Name: Player7 Dealer: False Money: 1059
+ Name: Player5 Dealer: True Money: 941
+ 
+Starting round 5
+Ante for this round: 10
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 25
+ 
+Player7 folded. Other player gets the pot of 25
+
+After round 5, player status: 
+ Name: Player7 Dealer: True Money: 1049
+ Name: Player5 Dealer: False Money: 951
+ 
+Starting round 6
+Ante for this round: 10
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: Player5 Action Phase: Bet1 Action Name: raise Amount: 7
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 52
+ 
+Player5 folded. Other player gets the pot of 52
+
+After round 6, player status: 
+ Name: Player7 Dealer: False Money: 1073
+ Name: Player5 Dealer: True Money: 927
+ 
+Starting round 7
+Ante for this round: 10
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 48
+ 
+Name: Player5
+Hand Rank: 3 
+Three of Clubs Eight of Diamonds Eight of Clubs Ten of Hearts Ten of Diamonds 
+
+ 
+Name: Player7
+Hand Rank: 2 
+Six of Clubs Seven of Diamonds Ten of Spades King of Hearts King of Diamonds 
+
+ 
+Betting round 2:
+Player: Player5 Action Phase: Bet2 Action Name: bet Amount: 15
+ 
+Player: Player7 Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 82
+ 
+Player5 folded. Other player gets the pot of 82
+
+After round 7, player status: 
+ Name: Player7 Dealer: True Money: 1112
+ Name: Player5 Dealer: False Money: 888
+ 
+Starting round 8
+Ante for this round: 10
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 36
+ 
+Name: Player7
+Hand Rank: 2 
+Three of Hearts Four of Diamonds Nine of Spades Ten of Diamonds Ten of Spades 
+
+ 
+Name: Player5
+Hand Rank: 2 
+Three of Clubs Six of Hearts Six of Diamonds Queen of Clubs Ace of Spades 
+
+ 
+Betting round 2:
+Player: Player7 Action Phase: Bet2 Action Name: bet Amount: 6
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 42
+ 
+Player5 folded. Other player gets the pot of 42
+
+After round 8, player status: 
+ Name: Player7 Dealer: False Money: 1130
+ Name: Player5 Dealer: True Money: 870
+ 
+Starting round 9
+Ante for this round: 10
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 15
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 58
+ 
+Name: Player5
+Hand Rank: 3 
+Three of Diamonds Three of Hearts Six of Hearts Nine of Clubs Nine of Hearts 
+
+ 
+Name: Player7
+Hand Rank: 2 
+Three of Spades Five of Diamonds Jack of Diamonds Jack of Hearts King of Hearts 
+
+ 
+Betting round 2:
+Player: Player5 Action Phase: Bet2 Action Name: bet Amount: 15
+ 
+Player: Player7 Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 92
+ 
+Player5 folded. Other player gets the pot of 92
+
+After round 9, player status: 
+ Name: Player7 Dealer: True Money: 1174
+ Name: Player5 Dealer: False Money: 826
+ 
+Starting round 10
+Ante for this round: 10
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 44
+ 
+Name: Player7
+Hand Rank: 2 
+Three of Clubs Six of Clubs Seven of Clubs Eight of Clubs Eight of Hearts 
+
+ 
+Name: Player5
+Hand Rank: 4 
+Four of Spades Nine of Clubs Nine of Hearts Nine of Spades King of Diamonds 
+
+ 
+Betting round 2:
+Player: Player7 Action Phase: Bet2 Action Name: bet Amount: 6
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 50
+ 
+Player5 folded. Other player gets the pot of 50
+
+After round 10, player status: 
+ Name: Player7 Dealer: False Money: 1196
+ Name: Player5 Dealer: True Money: 804
+ 
+Starting round 11
+Ante for this round: 10
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 48
+ 
+Name: Player5
+Hand Rank: 2 
+Two of Diamonds Three of Spades Queen of Hearts Queen of Diamonds King of Clubs 
+
+ 
+Name: Player7
+Hand Rank: 3 
+Two of Hearts Six of Spades Six of Hearts Nine of Hearts Nine of Spades 
+
+ 
+Betting round 2:
+Player: Player5 Action Phase: Bet2 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet2 Action Name: raise Amount: 5
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 73
+ 
+Player5 folded. Other player gets the pot of 73
+
+After round 11, player status: 
+ Name: Player7 Dealer: True Money: 1230
+ Name: Player5 Dealer: False Money: 770
+ 
+Starting round 12
+Ante for this round: 10
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 30
+ 
+Name: Player7
+Hand Rank: 2 
+Two of Hearts Two of Clubs Ten of Hearts Jack of Hearts Ace of Diamonds 
+
+ 
+Name: Player5
+Hand Rank: 2 
+Five of Clubs Five of Diamonds Six of Clubs Eight of Clubs Ace of Clubs 
+
+ 
+Betting round 2:
+Player: Player7 Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 38
+ 
+Player5 folded. Other player gets the pot of 38
+
+After round 12, player status: 
+ Name: Player7 Dealer: False Money: 1245
+ Name: Player5 Dealer: True Money: 755
+ 
+Starting round 13
+Ante for this round: 10
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 34
+ 
+Player5 folded. Other player gets the pot of 34
+
+After round 13, player status: 
+ Name: Player7 Dealer: True Money: 1260
+ Name: Player5 Dealer: False Money: 740
+ 
+Starting round 14
+Ante for this round: 10
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 27
+ 
+Player5 folded. Other player gets the pot of 27
+
+After round 14, player status: 
+ Name: Player7 Dealer: False Money: 1270
+ Name: Player5 Dealer: True Money: 730
+ 
+Starting round 15
+Ante for this round: 10
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 48
+ 
+Name: Player5
+Hand Rank: 2 
+Three of Diamonds Four of Hearts Four of Diamonds Nine of Hearts Queen of Diamonds 
+
+ 
+Name: Player7
+Hand Rank: 2 
+Five of Diamonds Six of Diamonds Six of Spades Eight of Hearts Jack of Hearts 
+
+ 
+Betting round 2:
+Player: Player5 Action Phase: Bet2 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 72
+ 
+Player5 folded. Other player gets the pot of 72
+
+After round 15, player status: 
+ Name: Player7 Dealer: True Money: 1304
+ Name: Player5 Dealer: False Money: 696
+ 
+Starting round 16
+Ante for this round: 10
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 44
+ 
+Name: Player7
+Hand Rank: 1 
+Two of Hearts Four of Clubs Five of Hearts Ten of Hearts Jack of Diamonds 
+
+ 
+Name: Player5
+Hand Rank: 3 
+Five of Diamonds Five of Spades Jack of Spades Jack of Hearts King of Spades 
+
+ 
+Betting round 2:
+Player: Player7 Action Phase: Bet2 Action Name: bet Amount: 4
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 48
+ 
+Player5 folded. Other player gets the pot of 48
+
+After round 16, player status: 
+ Name: Player7 Dealer: False Money: 1326
+ Name: Player5 Dealer: True Money: 674
+ 
+Starting round 17
+Ante for this round: 10
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 25
+ 
+Player7 folded. Other player gets the pot of 25
+
+After round 17, player status: 
+ Name: Player7 Dealer: True Money: 1316
+ Name: Player5 Dealer: False Money: 684
+ 
+Starting round 18
+Ante for this round: 10
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 42
+ 
+Player5 folded. Other player gets the pot of 42
+
+After round 18, player status: 
+ Name: Player7 Dealer: False Money: 1336
+ Name: Player5 Dealer: True Money: 664
+ 
+Starting round 19
+Ante for this round: 10
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 48
+ 
+Name: Player5
+Hand Rank: 3 
+Five of Hearts Six of Diamonds Six of Hearts Ace of Hearts Ace of Spades 
+
+ 
+Name: Player7
+Hand Rank: 2 
+Seven of Diamonds Jack of Spades Queen of Hearts Queen of Diamonds King of Clubs 
+
+ 
+Betting round 2:
+Player: Player5 Action Phase: Bet2 Action Name: bet Amount: 15
+ 
+Player: Player7 Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Player7 Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet2 Action Name: raise Amount: 93
+ 
+Player: Player7 Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet2 Action Name: raise Amount: 384
+ 
+Player: Player7 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 680
+ 
+Player7 folded. Other player gets the pot of 680
+
+After round 19, player status: 
+ Name: Player7 Dealer: True Money: 1188
+ Name: Player5 Dealer: False Money: 812
+ 
+Starting round 20
+Ante for this round: 10
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: Player5 Action Phase: Bet1 Action Name: raise Amount: 7
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 56
+ 
+Name: Player7
+Hand Rank: 3 
+Three of Diamonds Three of Clubs Four of Hearts Ten of Diamonds Ten of Hearts 
+
+ 
+Name: Player5
+Hand Rank: 2 
+Two of Spades Two of Diamonds Five of Clubs Eight of Spades Nine of Clubs 
+
+ 
+Betting round 2:
+Player: Player7 Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 63
+ 
+Player5 folded. Other player gets the pot of 63
+
+After round 20, player status: 
+ Name: Player7 Dealer: False Money: 1216
+ Name: Player5 Dealer: True Money: 784
+ 
+Starting round 21
+Ante for this round: 10
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 34
+ 
+Name: Player5
+Hand Rank: 2 
+Two of Hearts Seven of Spades Queen of Hearts Ace of Clubs Ace of Spades 
+
+ 
+Name: Player7
+Hand Rank: 1 
+Two of Clubs Three of Clubs Five of Clubs Six of Clubs Queen of Diamonds 
+
+ 
+Betting round 2:
+Player: Player5 Action Phase: Bet2 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 56
+ 
+Player5 folded. Other player gets the pot of 56
+
+After round 21, player status: 
+ Name: Player7 Dealer: True Money: 1243
+ Name: Player5 Dealer: False Money: 757
+ 
+Starting round 22
+Ante for this round: 10
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: Player5 Action Phase: Bet1 Action Name: raise Amount: 8
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 76
+ 
+Name: Player7
+Hand Rank: 4 
+Four of Diamonds Four of Hearts Four of Clubs Six of Diamonds Jack of Hearts 
+
+ 
+Name: Player5
+Hand Rank: 2 
+Two of Spades Two of Spades Three of Diamonds Eight of Spades Nine of Hearts 
+
+ 
+Betting round 2:
+Player: Player7 Action Phase: Bet2 Action Name: bet Amount: 9
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 85
+ 
+Player5 folded. Other player gets the pot of 85
+
+After round 22, player status: 
+ Name: Player7 Dealer: False Money: 1281
+ Name: Player5 Dealer: True Money: 719
+ 
+Starting round 23
+Ante for this round: 10
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 15
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 54
+ 
+Player5 folded. Other player gets the pot of 54
+
+After round 23, player status: 
+ Name: Player7 Dealer: True Money: 1306
+ Name: Player5 Dealer: False Money: 694
+ 
+Starting round 24
+Ante for this round: 10
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 36
+ 
+Name: Player7
+Hand Rank: 2 
+Three of Clubs Three of Spades Nine of Spades King of Hearts Ace of Hearts 
+
+ 
+Name: Player5
+Hand Rank: 3 
+Two of Spades Six of Spades Six of Clubs Jack of Clubs Jack of Hearts 
+
+ 
+Betting round 2:
+Player: Player7 Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: Player5 Action Phase: Bet2 Action Name: call Amount: 0
+ 
+After Bet2, pot is 52
+ 
+Player5 has a better hand and wins 52
+
+After round 24, player status: 
+ Name: Player7 Dealer: False Money: 1280
+ Name: Player5 Dealer: True Money: 720
+ 
+Starting round 25
+Ante for this round: 10
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 15
+ 
+Player: Player7 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 35
+ 
+Player7 folded. Other player gets the pot of 35
+
+After round 25, player status: 
+ Name: Player7 Dealer: True Money: 1270
+ Name: Player5 Dealer: False Money: 730
+ 
+Starting round 26
+Ante for this round: 20
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 62
+ 
+Player5 folded. Other player gets the pot of 62
+
+After round 26, player status: 
+ Name: Player7 Dealer: False Money: 1300
+ Name: Player5 Dealer: True Money: 700
+ 
+Starting round 27
+Ante for this round: 20
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 45
+ 
+Player7 folded. Other player gets the pot of 45
+
+After round 27, player status: 
+ Name: Player7 Dealer: True Money: 1280
+ Name: Player5 Dealer: False Money: 720
+ 
+Starting round 28
+Ante for this round: 20
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 50
+ 
+Player7 folded. Other player gets the pot of 50
+
+After round 28, player status: 
+ Name: Player7 Dealer: False Money: 1260
+ Name: Player5 Dealer: True Money: 740
+ 
+Starting round 29
+Ante for this round: 20
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 50
+ 
+Player7 folded. Other player gets the pot of 50
+
+After round 29, player status: 
+ Name: Player7 Dealer: True Money: 1240
+ Name: Player5 Dealer: False Money: 760
+ 
+Starting round 30
+Ante for this round: 20
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 54
+ 
+Name: Player7
+Hand Rank: 2 
+Three of Hearts Four of Clubs Four of Spades Six of Diamonds Seven of Hearts 
+
+ 
+Name: Player5
+Hand Rank: 2 
+Five of Diamonds Seven of Spades Queen of Diamonds Ace of Hearts Ace of Clubs 
+
+ 
+Betting round 2:
+Player: Player7 Action Phase: Bet2 Action Name: bet Amount: 5
+ 
+Player: Player5 Action Phase: Bet2 Action Name: call Amount: 0
+ 
+After Bet2, pot is 64
+ 
+Player5 has a better hand and wins 64
+
+After round 30, player status: 
+ Name: Player7 Dealer: False Money: 1208
+ Name: Player5 Dealer: True Money: 792
+ 
+Starting round 31
+Ante for this round: 20
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 50
+ 
+Player7 folded. Other player gets the pot of 50
+
+After round 31, player status: 
+ Name: Player7 Dealer: True Money: 1188
+ Name: Player5 Dealer: False Money: 812
+ 
+Starting round 32
+Ante for this round: 20
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 54
+ 
+Name: Player7
+Hand Rank: 2 
+Two of Clubs Six of Hearts Queen of Spades Queen of Hearts King of Hearts 
+
+ 
+Name: Player5
+Hand Rank: 2 
+Two of Spades Three of Diamonds Five of Hearts Seven of Diamonds Seven of Spades 
+
+ 
+Betting round 2:
+Player: Player7 Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 61
+ 
+Player5 folded. Other player gets the pot of 61
+
+After round 32, player status: 
+ Name: Player7 Dealer: False Money: 1215
+ Name: Player5 Dealer: True Money: 785
+ 
+Starting round 33
+Ante for this round: 20
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 54
+ 
+Player5 folded. Other player gets the pot of 54
+
+After round 33, player status: 
+ Name: Player7 Dealer: True Money: 1240
+ Name: Player5 Dealer: False Money: 760
+ 
+Starting round 34
+Ante for this round: 20
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 6
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 46
+ 
+Player5 folded. Other player gets the pot of 46
+
+After round 34, player status: 
+ Name: Player7 Dealer: False Money: 1260
+ Name: Player5 Dealer: True Money: 740
+ 
+Starting round 35
+Ante for this round: 20
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 68
+ 
+Name: Player5
+Hand Rank: 3 
+Six of Diamonds Six of Hearts Nine of Diamonds Queen of Spades Queen of Diamonds 
+
+ 
+Name: Player7
+Hand Rank: 2 
+Five of Clubs Seven of Spades Eight of Clubs Eight of Diamonds King of Diamonds 
+
+ 
+Betting round 2:
+Player: Player5 Action Phase: Bet2 Action Name: bet Amount: 15
+ 
+Player: Player7 Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 102
+ 
+Player5 folded. Other player gets the pot of 102
+
+After round 35, player status: 
+ Name: Player7 Dealer: True Money: 1309
+ Name: Player5 Dealer: False Money: 691
+ 
+Starting round 36
+Ante for this round: 20
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 6
+ 
+Player: Player5 Action Phase: Bet1 Action Name: raise Amount: 6
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 72
+ 
+Name: Player7
+Hand Rank: 4 
+Three of Diamonds Three of Clubs Three of Hearts Five of Spades King of Clubs 
+
+ 
+Name: Player5
+Hand Rank: 1 
+Two of Spades Four of Clubs Six of Spades Seven of Spades Ace of Clubs 
+
+ 
+Betting round 2:
+Player: Player7 Action Phase: Bet2 Action Name: bet Amount: 9
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 81
+ 
+Player5 folded. Other player gets the pot of 81
+
+After round 36, player status: 
+ Name: Player7 Dealer: False Money: 1345
+ Name: Player5 Dealer: True Money: 655
+ 
+Starting round 37
+Ante for this round: 20
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 45
+ 
+Player7 folded. Other player gets the pot of 45
+
+After round 37, player status: 
+ Name: Player7 Dealer: True Money: 1325
+ Name: Player5 Dealer: False Money: 675
+ 
+Starting round 38
+Ante for this round: 20
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 56
+ 
+Name: Player7
+Hand Rank: 2 
+Three of Clubs Five of Clubs Seven of Hearts Seven of Spades King of Diamonds 
+
+ 
+Name: Player5
+Hand Rank: 4 
+Eight of Hearts King of Spades King of Hearts King of Clubs Ace of Diamonds 
+
+ 
+Betting round 2:
+Player: Player7 Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 63
+ 
+Player5 folded. Other player gets the pot of 63
+
+After round 38, player status: 
+ Name: Player7 Dealer: False Money: 1353
+ Name: Player5 Dealer: True Money: 647
+ 
+Starting round 39
+Ante for this round: 20
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 50
+ 
+Player7 folded. Other player gets the pot of 50
+
+After round 39, player status: 
+ Name: Player7 Dealer: True Money: 1333
+ Name: Player5 Dealer: False Money: 667
+ 
+Starting round 40
+Ante for this round: 20
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 45
+ 
+Player7 folded. Other player gets the pot of 45
+
+After round 40, player status: 
+ Name: Player7 Dealer: False Money: 1313
+ Name: Player5 Dealer: True Money: 687
+ 
+Starting round 41
+Ante for this round: 20
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 64
+ 
+Player5 folded. Other player gets the pot of 64
+
+After round 41, player status: 
+ Name: Player7 Dealer: True Money: 1343
+ Name: Player5 Dealer: False Money: 657
+ 
+Starting round 42
+Ante for this round: 20
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 47
+ 
+Player5 folded. Other player gets the pot of 47
+
+After round 42, player status: 
+ Name: Player7 Dealer: False Money: 1363
+ Name: Player5 Dealer: True Money: 637
+ 
+Starting round 43
+Ante for this round: 20
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 64
+ 
+Name: Player5
+Hand Rank: 4 
+Six of Diamonds Jack of Clubs Ace of Hearts Ace of Clubs Ace of Spades 
+
+ 
+Name: Player7
+Hand Rank: 2 
+Two of Hearts Two of Diamonds Four of Hearts Nine of Hearts King of Diamonds 
+
+ 
+Betting round 2:
+Player: Player5 Action Phase: Bet2 Action Name: bet Amount: 20
+ 
+Player: Player7 Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet2 Action Name: raise Amount: 111
+ 
+Player: Player7 Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet2 Action Name: raise Amount: 572
+ 
+Player: Player7 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 914
+ 
+Player7 folded. Other player gets the pot of 914
+
+After round 43, player status: 
+ Name: Player7 Dealer: True Money: 1192
+ Name: Player5 Dealer: False Money: 808
+ 
+Starting round 44
+Ante for this round: 20
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 6
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 46
+ 
+Player5 folded. Other player gets the pot of 46
+
+After round 44, player status: 
+ Name: Player7 Dealer: False Money: 1212
+ Name: Player5 Dealer: True Money: 788
+ 
+Starting round 45
+Ante for this round: 20
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 68
+ 
+Name: Player5
+Hand Rank: 2 
+Five of Diamonds Six of Clubs Six of Hearts Nine of Hearts Jack of Diamonds 
+
+ 
+Name: Player7
+Hand Rank: 3 
+Two of Clubs Two of Diamonds Four of Hearts Ace of Hearts Ace of Spades 
+
+ 
+Betting round 2:
+Player: Player5 Action Phase: Bet2 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet2 Action Name: raise Amount: 5
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 93
+ 
+Player5 folded. Other player gets the pot of 93
+
+After round 45, player status: 
+ Name: Player7 Dealer: True Money: 1256
+ Name: Player5 Dealer: False Money: 744
+ 
+Starting round 46
+Ante for this round: 20
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 54
+ 
+Name: Player7
+Hand Rank: 1 
+Three of Clubs Four of Clubs Five of Clubs Seven of Clubs Ace of Spades 
+
+ 
+Name: Player5
+Hand Rank: 1 
+Two of Spades Seven of Diamonds Queen of Hearts King of Hearts Ace of Clubs 
+
+ 
+Betting round 2:
+Player: Player7 Action Phase: Bet2 Action Name: bet Amount: 5
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 59
+ 
+Player5 folded. Other player gets the pot of 59
+
+After round 46, player status: 
+ Name: Player7 Dealer: False Money: 1283
+ Name: Player5 Dealer: True Money: 717
+ 
+Starting round 47
+Ante for this round: 20
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 45
+ 
+Player7 folded. Other player gets the pot of 45
+
+After round 47, player status: 
+ Name: Player7 Dealer: True Money: 1263
+ Name: Player5 Dealer: False Money: 737
+ 
+Starting round 48
+Ante for this round: 20
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: Player5 Action Phase: Bet1 Action Name: raise Amount: 8
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 76
+ 
+Player5 folded. Other player gets the pot of 76
+
+After round 48, player status: 
+ Name: Player7 Dealer: False Money: 1299
+ Name: Player5 Dealer: True Money: 701
+ 
+Starting round 49
+Ante for this round: 20
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 45
+ 
+Player7 folded. Other player gets the pot of 45
+
+After round 49, player status: 
+ Name: Player7 Dealer: True Money: 1279
+ Name: Player5 Dealer: False Money: 721
+ 
+Starting round 50
+Ante for this round: 20
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: Player5 Action Phase: Bet1 Action Name: raise Amount: 8
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 76
+ 
+Player5 folded. Other player gets the pot of 76
+
+After round 50, player status: 
+ Name: Player7 Dealer: False Money: 1315
+ Name: Player5 Dealer: True Money: 685
+ 
+Starting round 51
+Ante for this round: 30
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 72
+ 
+Player5 folded. Other player gets the pot of 72
+
+After round 51, player status: 
+ Name: Player7 Dealer: True Money: 1350
+ Name: Player5 Dealer: False Money: 650
+ 
+Starting round 52
+Ante for this round: 30
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 9
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 69
+ 
+Player5 folded. Other player gets the pot of 69
+
+After round 52, player status: 
+ Name: Player7 Dealer: False Money: 1380
+ Name: Player5 Dealer: True Money: 620
+ 
+Starting round 53
+Ante for this round: 30
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 65
+ 
+Player7 folded. Other player gets the pot of 65
+
+After round 53, player status: 
+ Name: Player7 Dealer: True Money: 1350
+ Name: Player5 Dealer: False Money: 650
+ 
+Starting round 54
+Ante for this round: 30
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 67
+ 
+Player5 folded. Other player gets the pot of 67
+
+After round 54, player status: 
+ Name: Player7 Dealer: False Money: 1380
+ Name: Player5 Dealer: True Money: 620
+ 
+Starting round 55
+Ante for this round: 30
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 74
+ 
+Player5 folded. Other player gets the pot of 74
+
+After round 55, player status: 
+ Name: Player7 Dealer: True Money: 1415
+ Name: Player5 Dealer: False Money: 585
+ 
+Starting round 56
+Ante for this round: 30
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 70
+ 
+Player7 folded. Other player gets the pot of 70
+
+After round 56, player status: 
+ Name: Player7 Dealer: False Money: 1385
+ Name: Player5 Dealer: True Money: 615
+ 
+Starting round 57
+Ante for this round: 30
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 65
+ 
+Player7 folded. Other player gets the pot of 65
+
+After round 57, player status: 
+ Name: Player7 Dealer: True Money: 1355
+ Name: Player5 Dealer: False Money: 645
+ 
+Starting round 58
+Ante for this round: 30
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: Player5 Action Phase: Bet1 Action Name: raise Amount: 7
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 92
+ 
+Player5 folded. Other player gets the pot of 92
+
+After round 58, player status: 
+ Name: Player7 Dealer: False Money: 1399
+ Name: Player5 Dealer: True Money: 601
+ 
+Starting round 59
+Ante for this round: 30
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 74
+ 
+Player5 folded. Other player gets the pot of 74
+
+After round 59, player status: 
+ Name: Player7 Dealer: True Money: 1434
+ Name: Player5 Dealer: False Money: 566
+ 
+Starting round 60
+Ante for this round: 30
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 72
+ 
+Player5 folded. Other player gets the pot of 72
+
+After round 60, player status: 
+ Name: Player7 Dealer: False Money: 1469
+ Name: Player5 Dealer: True Money: 531
+ 
+Starting round 61
+Ante for this round: 30
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 74
+ 
+Name: Player5
+Hand Rank: 1 
+Six of Spades Eight of Diamonds Ten of Hearts Jack of Hearts Ace of Hearts 
+
+ 
+Name: Player7
+Hand Rank: 2 
+Two of Hearts Two of Clubs Three of Hearts Four of Hearts Eight of Clubs 
+
+ 
+Betting round 2:
+Player: Player5 Action Phase: Bet2 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 88
+ 
+Player5 folded. Other player gets the pot of 88
+
+After round 61, player status: 
+ Name: Player7 Dealer: True Money: 1511
+ Name: Player5 Dealer: False Money: 489
+ 
+Starting round 62
+Ante for this round: 30
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 70
+ 
+Player7 folded. Other player gets the pot of 70
+
+After round 62, player status: 
+ Name: Player7 Dealer: False Money: 1481
+ Name: Player5 Dealer: True Money: 519
+ 
+Starting round 63
+Ante for this round: 30
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 70
+ 
+Player7 folded. Other player gets the pot of 70
+
+After round 63, player status: 
+ Name: Player7 Dealer: True Money: 1451
+ Name: Player5 Dealer: False Money: 549
+ 
+Starting round 64
+Ante for this round: 30
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 74
+ 
+Name: Player7
+Hand Rank: 2 
+Four of Spades Six of Spades Eight of Hearts Eight of Diamonds Nine of Hearts 
+
+ 
+Name: Player5
+Hand Rank: 2 
+Three of Spades Five of Spades Five of Hearts Ten of Spades King of Spades 
+
+ 
+Betting round 2:
+Player: Player7 Action Phase: Bet2 Action Name: bet Amount: 6
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 80
+ 
+Player5 folded. Other player gets the pot of 80
+
+After round 64, player status: 
+ Name: Player7 Dealer: False Money: 1488
+ Name: Player5 Dealer: True Money: 512
+ 
+Starting round 65
+Ante for this round: 30
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 5
+ 
+Player: Player5 Action Phase: Bet1 Action Name: raise Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 5
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 110
+ 
+Name: Player5
+Hand Rank: 3 
+Five of Clubs Jack of Spades Jack of Clubs Ace of Clubs Ace of Spades 
+
+ 
+Name: Player7
+Hand Rank: 3 
+Seven of Clubs Seven of Spades Ten of Hearts Ten of Diamonds King of Hearts 
+
+ 
+Betting round 2:
+Player: Player5 Action Phase: Bet2 Action Name: bet Amount: 15
+ 
+Player: Player7 Action Phase: Bet2 Action Name: raise Amount: 5
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 145
+ 
+Player5 folded. Other player gets the pot of 145
+
+After round 65, player status: 
+ Name: Player7 Dealer: True Money: 1558
+ Name: Player5 Dealer: False Money: 442
+ 
+Starting round 66
+Ante for this round: 30
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 67
+ 
+Player5 folded. Other player gets the pot of 67
+
+After round 66, player status: 
+ Name: Player7 Dealer: False Money: 1588
+ Name: Player5 Dealer: True Money: 412
+ 
+Starting round 67
+Ante for this round: 30
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 74
+ 
+Name: Player5
+Hand Rank: 1 
+Three of Spades Seven of Diamonds Eight of Diamonds Jack of Clubs Ace of Clubs 
+
+ 
+Name: Player7
+Hand Rank: 1 
+Two of Diamonds Three of Diamonds Five of Spades Jack of Hearts Ace of Diamonds 
+
+ 
+Betting round 2:
+Player: Player5 Action Phase: Bet2 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 86
+ 
+Player5 folded. Other player gets the pot of 86
+
+After round 67, player status: 
+ Name: Player7 Dealer: True Money: 1630
+ Name: Player5 Dealer: False Money: 370
+ 
+Starting round 68
+Ante for this round: 30
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 9
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 78
+ 
+Name: Player7
+Hand Rank: 3 
+Four of Hearts Four of Diamonds Ten of Spades Ace of Diamonds Ace of Clubs 
+
+ 
+Name: Player5
+Hand Rank: 4 
+Two of Spades Queen of Hearts King of Spades King of Diamonds King of Hearts 
+
+ 
+Betting round 2:
+Player: Player7 Action Phase: Bet2 Action Name: bet Amount: 9
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 87
+ 
+Player5 folded. Other player gets the pot of 87
+
+After round 68, player status: 
+ Name: Player7 Dealer: False Money: 1669
+ Name: Player5 Dealer: True Money: 331
+ 
+Starting round 69
+Ante for this round: 30
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 84
+ 
+Name: Player5
+Hand Rank: 4 
+Two of Hearts Nine of Hearts Nine of Clubs Nine of Spades Queen of Hearts 
+
+ 
+Name: Player7
+Hand Rank: 6 
+Four of Diamonds Seven of Diamonds Queen of Diamonds King of Diamonds Ace of Diamonds 
+
+ 
+Betting round 2:
+Player: Player5 Action Phase: Bet2 Action Name: bet Amount: 20
+ 
+Player: Player7 Action Phase: Bet2 Action Name: raise Amount: 12
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 136
+ 
+Player5 folded. Other player gets the pot of 136
+
+After round 69, player status: 
+ Name: Player7 Dealer: True Money: 1731
+ Name: Player5 Dealer: False Money: 269
+ 
+Starting round 70
+Ante for this round: 30
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 74
+ 
+Name: Player7
+Hand Rank: 2 
+Seven of Clubs Seven of Diamonds Ten of Diamonds King of Diamonds Ace of Hearts 
+
+ 
+Name: Player5
+Hand Rank: 1 
+Two of Spades Three of Diamonds Five of Hearts Six of Diamonds Eight of Diamonds 
+
+ 
+Betting round 2:
+Player: Player7 Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 82
+ 
+Player5 folded. Other player gets the pot of 82
+
+After round 70, player status: 
+ Name: Player7 Dealer: False Money: 1768
+ Name: Player5 Dealer: True Money: 232
+ 
+Starting round 71
+Ante for this round: 30
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 5
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 90
+ 
+Name: Player5
+Hand Rank: 2 
+Two of Clubs Two of Spades Three of Hearts Six of Hearts Eight of Diamonds 
+
+ 
+Name: Player7
+Hand Rank: 7 
+Jack of Spades Jack of Clubs Ace of Clubs Ace of Diamonds Ace of Hearts 
+
+ 
+Betting round 2:
+Player: Player5 Action Phase: Bet2 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet2 Action Name: raise Amount: 15
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 125
+ 
+Player5 folded. Other player gets the pot of 125
+
+After round 71, player status: 
+ Name: Player7 Dealer: True Money: 1823
+ Name: Player5 Dealer: False Money: 177
+ 
+Starting round 72
+Ante for this round: 30
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 67
+ 
+Player5 folded. Other player gets the pot of 67
+
+After round 72, player status: 
+ Name: Player7 Dealer: False Money: 1853
+ Name: Player5 Dealer: True Money: 147
+ 
+Starting round 73
+Ante for this round: 30
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 70
+ 
+Player7 folded. Other player gets the pot of 70
+
+After round 73, player status: 
+ Name: Player7 Dealer: True Money: 1823
+ Name: Player5 Dealer: False Money: 177
+ 
+Starting round 74
+Ante for this round: 30
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 70
+ 
+Player7 folded. Other player gets the pot of 70
+
+After round 74, player status: 
+ Name: Player7 Dealer: False Money: 1793
+ Name: Player5 Dealer: True Money: 207
+ 
+Starting round 75
+Ante for this round: 30
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 82
+ 
+Player5 folded. Other player gets the pot of 82
+
+After round 75, player status: 
+ Name: Player7 Dealer: True Money: 1833
+ Name: Player5 Dealer: False Money: 167
+ 
+Starting round 76
+Ante for this round: 30
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 76
+ 
+Name: Player7
+Hand Rank: 2 
+Five of Hearts Six of Diamonds King of Clubs King of Spades Ace of Hearts 
+
+ 
+Name: Player5
+Hand Rank: 3 
+Five of Clubs Five of Diamonds Eight of Diamonds Nine of Spades Nine of Hearts 
+
+ 
+Betting round 2:
+Player: Player7 Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: Player5 Action Phase: Bet2 Action Name: raise Amount: 8
+ 
+Player: Player7 Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 112
+ 
+Player5 folded. Other player gets the pot of 112
+
+After round 76, player status: 
+ Name: Player7 Dealer: False Money: 1887
+ Name: Player5 Dealer: True Money: 113
+ 
+Starting round 77
+Ante for this round: 30
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 70
+ 
+Player7 folded. Other player gets the pot of 70
+
+After round 77, player status: 
+ Name: Player7 Dealer: True Money: 1857
+ Name: Player5 Dealer: False Money: 143
+ 
+Starting round 78
+Ante for this round: 30
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 10
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: Player5 Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 84
+ 
+Name: Player7
+Hand Rank: 2 
+Four of Clubs Eight of Hearts Jack of Clubs Queen of Spades Queen of Clubs 
+
+ 
+Name: Player5
+Hand Rank: 3 
+Seven of Clubs Seven of Diamonds Ten of Spades King of Hearts King of Spades 
+
+ 
+Betting round 2:
+Player: Player7 Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: Player5 Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 91
+ 
+Player5 folded. Other player gets the pot of 91
+
+After round 78, player status: 
+ Name: Player7 Dealer: False Money: 1899
+ Name: Player5 Dealer: True Money: 101
+ 
+Starting round 79
+Ante for this round: 30
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 7
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 77
+ 
+Player5 folded. Other player gets the pot of 77
+
+After round 79, player status: 
+ Name: Player7 Dealer: True Money: 1934
+ Name: Player5 Dealer: False Money: 66
+ 
+Starting round 80
+Ante for this round: 30
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 67
+ 
+Player5 folded. Other player gets the pot of 67
+
+After round 80, player status: 
+ Name: Player7 Dealer: False Money: 1964
+ Name: Player5 Dealer: True Money: 36
+ 
+Starting round 81
+Ante for this round: 30
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 6
+ 
+Player: Player7 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 66
+ 
+Player7 folded. Other player gets the pot of 66
+
+After round 81, player status: 
+ Name: Player7 Dealer: True Money: 1934
+ Name: Player5 Dealer: False Money: 66
+ 
+Starting round 82
+Ante for this round: 30
+Betting round 1:
+Player: Player7 Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 67
+ 
+Player5 folded. Other player gets the pot of 67
+
+After round 82, player status: 
+ Name: Player7 Dealer: False Money: 1964
+ Name: Player5 Dealer: True Money: 36
+ 
+Starting round 83
+Ante for this round: 30
+Betting round 1:
+Player: Player5 Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player7 Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Player5 Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 90
+ 
+Player5 folded. Other player gets the pot of 90
+
+After round 83, player status: 
+ Name: Player7 Dealer: True Money: 2007
+ Name: Player5 Dealer: False Money: -7
+ 
+After 83 rounds:
+Player7 has 2007 credits and Player5 has -7credits. Player7 is the winner!
