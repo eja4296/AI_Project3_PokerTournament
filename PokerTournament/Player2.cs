@@ -1,372 +1,185 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace PokerTournament
 {
+    // allows a Player2 player to participate
     class Player2 : Player
     {
+        // setup your basic Player2 player
         public Player2(int idNum, string nm, int mny) : base(idNum, nm, mny)
         {
         }
 
+        // handle the first round of betting
         public override PlayerAction BettingRound1(List<PlayerAction> actions, Card[] hand)
         {
-            Random rand = new Random();
+            // list the hand
+            ListTheHand(hand);
+
+            // select an action
+            string actionSelection = "";
             PlayerAction pa = null;
-            // evaluate the hand
-            Card highCard = null;
-            int rank = Evaluate.RateAHand(hand, out highCard);
-
-            //bets the ammount based on hand rank
-            int amount = 10 * rank + rand.Next(0, 15);
-
-            //if isn't the dealer, and is going first
-            if (this.Dealer == false)
+            do
             {
-                if (rank == 1) //if rank is 1, no point in playing
-                    pa = new PlayerAction(Name, "Bet1", "fold", amount);
-                else if (rank >= 4)
-                    pa = new PlayerAction(Name, "Bet1", "bet", amount);
-                else // check cause the hand you ahve isn't that great
-                    pa = new PlayerAction(Name, "Bet1", "check", amount);
-            }
-            else
-            {
-                if (rank == 1) //if rank is 1, no point in playing
-                    pa = new PlayerAction(Name, "Bet1", "fold", amount);
-                else if (rank < 5) //match the bet if hand rank is 6 or less
-                    pa = new PlayerAction(Name, "Bet1", "call", amount);
-                else // else raise the bet cause your hand is probably the best
-                    pa = new PlayerAction(Name, "Bet1", "raise", amount);
-            }
+                Console.WriteLine("Select an action:\n1 - bet\n2 - raise\n3 - call\n4 - check\n5 - fold");
+                actionSelection = Console.ReadLine();
 
+                // get amount if appropriate
+                int amount = 0;
+                if (actionSelection[0] == '1' || actionSelection[0] == '2')
+                {
+                    string amtText = "";
+                    do
+                    {
+                        if (actionSelection[0] == '1') // bet
+                        {
+                            Console.Write("Amount to bet? ");
+                            amtText = Console.ReadLine();
+                        }
+                        else if (actionSelection[0] == '2') // raise
+                        {
+                            Console.Write("Amount to raise? ");
+                            amtText = Console.ReadLine();
+                        }
+                        // convert the string to an int
+                        int tempAmt = 0;
+                        int.TryParse(amtText, out tempAmt);
+
+                        // check input
+                        if (tempAmt > this.Money) //
+                        {
+                            Console.WriteLine("Amount bet is more than the amount you have available.");
+                            amount = 0;
+                        }
+                        else if (tempAmt < 0)
+                        {
+                            Console.WriteLine("Amount bet or raised cannot be less than zero.");
+                            amount = 0;
+                        }
+                        else
+                        {
+                            amount = tempAmt;
+                        }
+                    } while (amount <= 0);
+                }
+
+                // create the PlayerAction
+                switch (actionSelection)
+                {
+                    case "1": pa = new PlayerAction(Name, "Bet1", "bet", amount); break;
+                    case "2": pa = new PlayerAction(Name, "Bet1", "raise", amount); break;
+                    case "3": pa = new PlayerAction(Name, "Bet1", "call", amount); break;
+                    case "4": pa = new PlayerAction(Name, "Bet1", "check", amount); break;
+                    case "5": pa = new PlayerAction(Name, "Bet1", "fold", amount); break;
+                    default: Console.WriteLine("Invalid menu selection - try again"); continue;
+                }
+            } while (actionSelection != "1" && actionSelection != "2" &&
+                    actionSelection != "3" && actionSelection != "4" &&
+                    actionSelection != "5");
+            // return the player action
             return pa;
         }
 
+        // reuse the same logic for second betting round
         public override PlayerAction BettingRound2(List<PlayerAction> actions, Card[] hand)
         {
-            Random rand = new Random();
-            Card highCard = null;
-            int rank = Evaluate.RateAHand(hand, out highCard);
+            PlayerAction pa1 = BettingRound1(actions, hand);
 
-            //Create the variable that will be returned
-            PlayerAction pa;
-
-            PlayerAction mostRecentAction = actions[actions.Count - 1];
-
-            //Decision Tree
-
-            //If the other player has already made a move
-            if (actions.Count > 0)
-            {
-                //If the opponent checks
-                if (mostRecentAction.ActionName == "check")
-                {
-                    //If your hand is One Pair or worse, check
-                    if (rank < 2)
-                        pa = new PlayerAction(Name, "Bet2", "check", 0);
-                    //Your hand is better than one pair, bet a small bet to try and coax out more money from the opponent
-                    else
-                        pa = new PlayerAction(Name, "Bet2", "bet", rand.Next(1, 10) * rank);
-                }
-                //If the opponenet doesn't check
-                else
-                {
-                    //The oppponent bet
-                    if (mostRecentAction.ActionName == "bet")
-                    {
-                        //The bet was small (it's hard to know how people are going to bet with their AIs, I'm hoping under 50 is small)
-                        if (mostRecentAction.Amount < 50)
-                        {
-                            //If your hand is good, raise a little bit in order to coax out more money from them
-                            if (rank > 3)
-                            {
-                                pa = new PlayerAction(Name, "Bet2", "raise", rand.Next(20, 25));
-                            }
-                            //Your hand isn't good
-                            else
-                            {
-                                //Your hand is decent, so you call that small bet
-                                if (rank == 3)
-                                    pa = new PlayerAction(Name, "Bet2", "call", 0); //call, so amount doesn't matter
-                                //Your hand is bad, so you fold
-                                else
-                                {
-                                    pa = new PlayerAction(Name, "Bet2", "fold", 0);
-                                }
-                            }
-                        }
-                        //The bet was not small
-                        else
-                        {
-                            //Great hand, so you call
-                            if (rank > 6)
-                                pa = new PlayerAction(Name, "Bet2", "call", 0);
-                            //You won't be able to compete so you fold
-                            else
-                                pa = new PlayerAction(Name, "Bet2", "fold", 0);
-                        }
-                    }
-                    //The opponent did not bet or check, so they must have raised
-                    else
-                    {
-                        //They raised a lot
-                        if (mostRecentAction.Amount >= 50)
-                        {
-                            //Your hand is great
-                            if (rank > 6)
-                                pa = new PlayerAction(Name, "Bet2", "raise", rand.Next(20, 25));
-                            //Your hand is not great
-                            else
-                            {
-                                //Your hand isn't good enough
-                                if (rank < 4)
-                                    pa = new PlayerAction(Name, "Bet2", "fold", 0);
-                                //our hand is just good enough
-                                else
-                                    pa = new PlayerAction(Name, "Bet2", "call", 0);
-                            }
-                        }
-                        //They didn't raise a lot
-                        else
-                        {
-                            //Your hand is trash
-                            if (rank < 2)
-                                pa = new PlayerAction(Name, "Bet2", "fold", 0);
-                            //Your hand is good enough to call
-                            else
-                                pa = new PlayerAction(Name, "Bet2", "call", 0);
-                        }
-
-                    }
-                }
-            }
-            //If you are the first decision
-            else
-            {
-                //If your hand is One Pair or worse, check
-                if (rank < 2)
-                    pa = new PlayerAction(Name, "Bet2", "check", 0);
-                //If your hand is better than one pair, bet low
-                else
-                    pa = new PlayerAction(Name, "Bet2", "bet", rand.Next(1, 10));
-            }
-
-            return pa;
+            // create a new PlayerAction object
+            return new PlayerAction(pa1.Name, "Bet2", pa1.ActionName, pa1.Amount);
         }
 
         public override PlayerAction Draw(Card[] hand)
         {
+            // list the hand
+            ListTheHand(hand);
 
-            /// Keeping it super rudimentary
-            /// Fuzzy logic might be better here
-            /// But since every rank corresponds with a different set of cards (IE: 1 = high card,  2 = Two pair, 10 is always = Royal Flush), 10 if statements are easier to manage imo
-            /// 
-             
-            PlayerAction pa = new PlayerAction(Name, "Draw", "stand pat", 0);
+            // determine how many cards to delete
+            int cardsToDelete = 0;
+            do
+            {
+                Console.Write("How many cards to delete? "); // get the count
+                string deleteStr = Console.ReadLine();
+                int.TryParse(deleteStr, out cardsToDelete);
+            } while (cardsToDelete < 0 || cardsToDelete > 5);
 
+            // which cards to delete if any
+            PlayerAction pa = null;
+            if (cardsToDelete > 0 && cardsToDelete < 5)
+            {
+                for (int i = 0; i < cardsToDelete; i++) // loop to delete cards
+                {
+                    Console.WriteLine("\nDelete card " + (i + 1) + ":");
+                    for (int j = 0; j < hand.Length; j++)
+                    {
+                        Console.WriteLine("{0} - {1}", (j + 1), hand[j]);
+                    }
+                    // selete cards to delete
+                    int delete = 0;
+                    do
+                    {
 
-            // Print out the hand so we can see it
-            //ListTheHand(hand);
-            Console.WriteLine("\n");
+                        Console.Write("Which card to delete? (1 - 5): ");
+                        string delStr = Console.ReadLine();
+                        int.TryParse(delStr, out delete);
 
-            // The first thing we should do is to evaluate our hand
+                        // see if the entry is valid
+                        if (delete < 1 || delete > 5)
+                        {
+                            Console.WriteLine("Invalid entry - enter a value between 1 and 5.");
+                            delete = 0;
+                        }
+                        else if (hand[delete - 1] == null)
+                        {
+                            Console.WriteLine("Entry was already deleted.");
+                            delete = 0;
+                        }
+                        else
+                        {
+                            hand[delete - 1] = null; // delete entry
+                            delete = 99; // flag to exit loop
+                        }
+                    } while (delete == 0);
+                }
+                // set the PlayerAction object
+                pa = new PlayerAction(Name, "Draw", "draw", cardsToDelete);
+            }
+            else if (cardsToDelete == 5)
+            {
+                // delete them all
+                for (int i = 0; i < hand.Length; i++)
+                {
+                    hand[i] = null;
+                }
+                pa = new PlayerAction(Name, "Draw", "draw", 5);
+            }
+            else // no cards deleted
+            {
+                pa = new PlayerAction(Name, "Draw", "stand pat", 0);
+            }
+
+            // return the action
+            return pa;
+        }
+
+        // helper method - list the hand
+        private void ListTheHand(Card[] hand)
+        {
+            // evaluate the hand
             Card highCard = null;
             int rank = Evaluate.RateAHand(hand, out highCard);
 
-
-            // If you have nothing
-            switch (rank)
+            // list your hand
+            Console.WriteLine("\nName: " + Name + " Your hand:   Rank: " + rank);
+            for (int i = 0; i < hand.Length; i++)
             {
-                case 1: // You have nothing; 
-                    #region Section 1 (High Card)
-                    Console.WriteLine("\n AI didn't like their hand.");
-                    // If your high is 10 or greater, then get rid of everything but the 10+
-                    // Otherwise, dump everything and redraw
-                    if (highCard.Value >= 10)
-                    {
-                        for (int i = 0; i < hand.Length; i++)
-                        {
-                            if (hand[i] == highCard)
-                                continue;
-
-                            hand[i] = null;
-                        }
-                        pa = new PlayerAction(Name, "Draw", "draw", 4);
-                        Console.WriteLine("\n AI Discarded 4 cards, and kept their high card");
-                    }
-                    else
-                    {
-                        // Dump!
-                        for (int i = 0; i < hand.Length; i++)
-                        {
-                            hand[i] = null;
-                        }
-                        pa = new PlayerAction(Name, "Draw", "draw", 5);
-                        Console.WriteLine("\n AI Discarded all 5 cards.");
-                    }
-                    #endregion
-                    break;
-                case 2: // We have exactly a 1 pair
-                    #region Section 2 (Single Pair)
-
-                    // First identify what number of a pair we have
-                    int pairValue = 0;
-                    for (int i = 2; i < 15; i++) // Loop through every possible card number
-                    {
-                        if (Evaluate.ValueCount(i, hand) == 2) // Thankfully we have this method
-                        {
-                            pairValue = i;
-                            break;
-                        }
-                    }
-
-                    // We know which number it is
-                    // If our high card is 10 or higher, we'll want to dump every card, except for the high card and our double
-                    if (highCard.Value >= 10 && highCard.Value != pairValue) // Also check to make sure our high card isn't actually our pairValue. If it is then we'll just dump everything except for the pair
-                    {
-                        for (int i = 0; i < hand.Length; i++)
-                        {
-                            if (hand[i].Value == pairValue || hand[i].Value == highCard.Value)
-                                continue;
-
-                            hand[i] = null;
-                        }
-
-                        pa = new PlayerAction(Name, "Draw", "draw", 2);
-                        Console.WriteLine("\n AI has a 2 pair and has discarded everything but the 2 pair and their high card.");
-                    }
-                    else
-                    {
-                        // If our high card isn't 10 or higher, then dump every card except for the high cards
-                        // Dump!
-                        for (int i = 0; i < hand.Length; i++)
-                        {
-                            if (hand[i].Value == pairValue)
-                                continue;
-
-                            hand[i] = null;
-                        }
-                        pa = new PlayerAction(Name, "Draw", "draw", 3);
-                        Console.WriteLine("\n AI has a 2 pair and has discarded everything but the 2 pair.");
-                    }
-                    #endregion
-                    break;
-                case 3: // We have two pairs!
-                    #region Section 3 (Two Pairs)
-                    // Ok first thing we need to do is to figure out which numbers are the two pair
-                    int pairValue1 = 0;
-                    int pairValue2 = 0;
-                    for (int i = 2; i < 15; i++) // Loop through every possible card number
-                    {
-                        if (Evaluate.ValueCount(i, hand) == 2)
-                        {
-                            pairValue1 = i;
-                            break;
-                        }
-                    }
-
-                    // Do it again and get the second one
-                    for (int i = 2; i < 15; i++) // Loop through every possible card number
-                    {
-                        if (Evaluate.ValueCount(i, hand) == 2)
-                        {
-                            if (i == pairValue2)
-                                continue;
-                            pairValue2 = i;
-                            break;
-                        }
-                    }
-
-                    if (pairValue1 == highCard.Value || pairValue2 == highCard.Value)
-                    {
-                        // Dump the other card and hope for a higher card
-                        for (int i = 0; i < hand.Length; i++)
-                        {
-                            if (hand[i].Value == pairValue1 || hand[i].Value == pairValue2)
-                                continue;
-
-                            hand[i] = null;
-                            pa = new PlayerAction(Name, "Draw", "draw", 1);
-                        }
-                    }else
-                    {
-                        // Keep it! Your hand is good!
-                        pa = new PlayerAction(Name, "Draw", "stand pat", 0);
-                    }
-                    #endregion
-                    break;
-                case 4: // Three of a kind
-                    #region Section 4 (Three of a Kind)
-                    // Pretty simple. Exactly the same as 1 pair except that it's with 3
-                    // First identify what number of a pair we have
-                    int triValue = 0;
-                    for (int i = 2; i < 15; i++) // Loop through every possible card number
-                    {
-                        if (Evaluate.ValueCount(i, hand) == 3) // Thankfully we have this method
-                        {
-                            pairValue = i;
-                            break;
-                        }
-                    }
-
-                    // We know which number it is
-                    // If our high card is 10 or higher, we'll want to dump every card, except for the high card and our tripple
-                    if (highCard.Value >= 10 && highCard.Value != triValue) // Also check to make sure our high card isn't actually our trieValue. If it is then we'll just dump everything except for the tripple
-                    {
-                        for (int i = 0; i < hand.Length; i++)
-                        {
-                            if (hand[i].Value == triValue || hand[i].Value == highCard.Value)
-                                continue;
-
-                            hand[i] = null;
-                        }
-
-                        pa = new PlayerAction(Name, "Draw", "draw", 1);
-                        Console.WriteLine("\n AI has a tripple and has discarded everything but the 3 of a kind and their high card.");
-                    }
-                    else
-                    {
-                        // If our high card isn't 10 or higher, then dump every card except for the high cards
-                        // Dump!
-                        for (int i = 0; i < hand.Length; i++)
-                        {
-                            if (hand[i].Value == triValue)
-                                continue;
-
-                            hand[i] = null;
-                        }
-                        pa = new PlayerAction(Name, "Draw", "draw", 2);
-                        Console.WriteLine("\n AI has a 3 of a kind and has discarded everything but the tripple.");
-                    }
-                    #endregion
-                    break;
-                // There's no reason for a case. Case 5 is a stroke, and we stand pat if we have a stroke
-                case 8: // 4 of a kind
-                    #region Section 8 (Four of a Kind)
-                    // Check to see if our high is high enough. If it isn't drop it and as for another.
-                    int theQuadNumber = hand[3].Value;
-                    if(theQuadNumber == highCard.Value || highCard.Value <= 10)
-                    {
-                        // Get rid of the other card because we can do better
-                        for (int i = 0; i < hand.Length; i++)
-                        {
-                            if (hand[i].Value == theQuadNumber)
-                                continue;
-
-                            hand[i] = null;
-                        }
-                        pa = new PlayerAction(Name, "Draw", "draw", 1);
-                    } 
-                    #endregion
-                    break;
-                // Any other selection is just a hold hand because we don't want to drop anything
+                Console.Write(hand[i].ToString() + " ");
             }
-
-
-            return pa;
+            Console.WriteLine();
         }
     }
 }
