@@ -40,7 +40,7 @@ namespace PokerTournament
             float speculativeOpponentBaseBet = averageOpponentBetFromPreviousRound / speculativeOpponentRating;
 
             // Our base bet should seek towards what we think the opponent's is if we were able to record any bets from them this round
-            if(speculativeOpponentRating != 0)
+            if(opponentCurrentRoundBetCount > 0 && speculativeOpponentRating != 0)
                 baseBetValue = (baseBetValue + speculativeOpponentBaseBet) / 2;
 
             // Reset per-round values
