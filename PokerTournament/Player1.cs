@@ -17,12 +17,19 @@ namespace PokerTournament
 
         public override PlayerAction BettingRound1(List<PlayerAction> actions, Card[] hand)
         {
-            throw new NotImplementedException();
+            int amountBet = 10;
+            
+            PlayerAction action = new PlayerAction(Name, "Bet1", "bet", amountBet);
+            return action;
         }
 
         public override PlayerAction BettingRound2(List<PlayerAction> actions, Card[] hand)
         {
-            throw new NotImplementedException();
+            int amountBet = 10;
+            
+            PlayerAction action = new PlayerAction(Name, "Bet2", "bet", amountBet);
+            return action;
+
         }
 
         public override PlayerAction Draw(Card[] hand)

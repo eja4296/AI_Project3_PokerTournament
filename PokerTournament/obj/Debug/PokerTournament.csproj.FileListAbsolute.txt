@@ -40,3 +40,4 @@ E:\Git\Poker\PokerTournament\obj\Debug\PokerTournament.pdb
 E:\Git\Poker\PokerTournament\bin\Debug\PokerTournament.exe
 E:\Git\Poker\PokerTournament\bin\Debug\PokerTournament.pdb
 E:\Git\Poker\PokerTournament\obj\Debug\PokerTournament.csprojResolveAssemblyReference.cache
+D:\AI_Project3\PokerTournament\obj\Debug\PokerTournament.csproj.CoreCompileInputs.cache
