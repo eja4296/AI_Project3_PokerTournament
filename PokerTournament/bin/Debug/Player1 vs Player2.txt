@@ -1,7 +1,39 @@
 Starting round 1
 Ante for this round: 10
 Betting round 1:
-Player: Player2 Action Phase: Bet1 Action Name: bet Amount: 10
+Player: Player2 Action Phase: Bet1 Action Name: bet Amount: 15
  
-Player: Player1 Action Phase: Bet1 Action Name: bet Amount: 10
+Player: Player1 Action Phase: Bet1 Action Name: call Amount: 15
+ 
+After Bet1, pot is 50
+ 
+Name: Player2
+Hand Rank: 2 
+Six of Diamonds Six of Hearts Eight of Clubs King of Spades Ace of Diamonds 
+
+ 
+Name: Player1
+Hand Rank: 3 
+Three of Clubs Three of Spades Four of Clubs Four of Spades Queen of Spades 
+
+ 
+Betting round 2:
+Player: Player2 Action Phase: Bet2 Action Name: check Amount: 0
+ 
+Player: Player1 Action Phase: Bet2 Action Name: bet Amount: 15
+ 
+Player: Player2 Action Phase: Bet2 Action Name: call Amount: 0
+ 
+After Bet2, pot is 80
+ 
+Player1 has a better hand and wins 80
+
+After round 1, player status: 
+ Name: Player1 Dealer: True Money: 1040
+ Name: Player2 Dealer: False Money: 960
+ 
+Starting round 2
+Ante for this round: 10
+Betting round 1:
+Player: Player1 Action Phase: Bet1 Action Name: bet Amount: 15
  

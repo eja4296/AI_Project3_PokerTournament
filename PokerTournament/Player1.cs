@@ -26,19 +26,7 @@ namespace PokerTournament
             Card high;
             int rating = Evaluate.RateAHand(hand, out high);
 
-            /*
-            // Loop through action list to get opponent's last action
-            PlayerAction opponentLastAction;
-            foreach(PlayerAction pa in actions)
-            {
-                if(pa.Name != Name)
-                {
-                    opponentLastAction = pa;
-                    Console.WriteLine("LAST ACTION: " + opponentLastAction.Name + " - " + opponentLastAction.ActionName);
-                }
-            }
-            */
-
+            // Get hand rating to base bet on
             switch (rating)
             {
                 // High card - 50.12%
@@ -48,48 +36,135 @@ namespace PokerTournament
 
                 // 1 Pair - 42.26%
                 case 2:
-                    amountBet = 15;
+                    amountBet = 10;
                     break;
 
                 // 2 Pairs - 4.75%
                 case 3:
-                    amountBet = 20;
+                    amountBet = 12;
                     break;
 
                 // 3 of a Kind - 2.11%
                 case 4:
-                    amountBet = 25;
+                    amountBet = 15;
                     break;
 
                 // Straight - 0.39%
                 case 5:
-                    amountBet = 30;
+                    amountBet = 20;
                     break;
 
                 // Flush - 0.20%
                 case 6:
-                    amountBet = 40;
+                    amountBet = 25;
                     break;
 
                 // Full House - 0.14%
                 case 7:
-                    amountBet = 50;
+                    amountBet = 30;
                     break;
 
                 // 4 of a King - 0.02%
                 case 8:
-                    amountBet = 60;
+                    amountBet = 35;
                     break;
 
                 // Straight Flush - 0.001%
                 case 9:
-                    amountBet = 80;
+                    amountBet = 40;
                     break;
 
                 // Royal Flush - 0.0001%
                 case 10:
-                    amountBet = 100;
+                    amountBet = 50;
                     break;
+            }
+
+            // Other player has gone first, but do something
+            if (actions.Count != 0)
+            {
+                foreach(PlayerAction pa in actions)
+                {
+
+                    // If the action is not our player's, and the action is not draw
+                    if (pa.Name != "Player1" && pa.ActionPhase != "Draw")
+                    {
+                        // For Bet1
+                        if (pa.ActionPhase == "Bet1")
+                        {
+                            // Other player has bet
+                            if (pa.ActionName == "bet")
+                            {
+                                // player must call, raise, or fold
+                                // Just call for now
+                                actionName = "call";
+                                amountBet = pa.Amount;
+                            }
+                            else if (pa.ActionName == "check")
+                            {
+                                // Player must bet
+                                actionName = "bet";
+                            }
+                            else if (pa.ActionName == "call")
+                            {
+                                // Do nothing?
+                            }
+                            else if (pa.ActionName == "raise")
+                            {
+                                // Player should call or fold
+                                // Just call for now
+                                actionName = "call";
+                                amountBet = pa.Amount;
+                            }
+                            // Opponent folded
+                            else
+                            {
+                                // Do nothing
+                            }
+                        }
+
+                        // For Bet2
+                        if (pa.ActionPhase == "Bet2")
+                        {
+                            // Other player has bet
+                            if (pa.ActionName == "bet")
+                            {
+                                // player must call, raise, or fold
+                                // Just call for now
+                                actionName = "call";
+                                amountBet = pa.Amount;
+                            }
+                            else if (pa.ActionName == "check")
+                            {
+                                // Player must bet
+                                actionName = "bet";
+                            }
+                            else if (pa.ActionName == "call")
+                            {
+                                // Do nothing?
+                            }
+                            else if (pa.ActionName == "raise")
+                            {
+                                // Player should call or fold
+                                // Just call for now
+                                actionName = "call";
+                                amountBet = pa.Amount;
+                            }
+                            // Opponent folded
+                            else
+                            {
+                                // Do nothing
+                            }
+                        }
+
+                    }
+                }
+                
+            }
+            // Our player goes first, must check or bet
+            else
+            {
+                actionName = "bet";
             }
 
             // Player can bet, check, raise, fold, call
