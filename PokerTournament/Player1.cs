@@ -13,13 +13,46 @@ namespace PokerTournament
         float[,] handMovementPercentages;
         float[,] handPercentagesByCardCount;
         float[] handSpeculativeValues;
+        float baseBetValue = 10;
+        float opponentCurrentRoundBet = 0;
+        float opponentCurrentRoundBetCount = 0;
         int previousMoney = -1;
+        int previousHandRating = 0;
 
-        public float OddsOfDrawing(int rating, int numberOfCards) {
+        private void LogOpponentBet(float amt) {
+            opponentCurrentRoundBet += amt;
+            opponentCurrentRoundBetCount++;
+        }
+
+        private void LogPreviousRound() {
+            float averageOpponentBetFromPreviousRound = (opponentCurrentRoundBetCount > 0) ? opponentCurrentRoundBet / opponentCurrentRoundBetCount : 0;
+
+            // If this is the first round initialize some temp values
+            if (previousMoney == -1) {
+                previousMoney = Money;
+                return;
+            }
+
+            // If we lost the previous round, assume the opponent's rating was halfway between ours and the max
+            // If we won, assume it was halfway between ours and the min
+            float speculativeOpponentRating = (previousMoney > Money) ? (10 + previousHandRating) / 2 : (1 + previousHandRating) / 2;
+
+            float speculativeOpponentBaseBet = averageOpponentBetFromPreviousRound / speculativeOpponentRating;
+
+            // Our base bet should seek towards what we think the opponent's is if we were able to record any bets from them this round
+            if(speculativeOpponentRating != 0)
+                baseBetValue = (baseBetValue + speculativeOpponentBaseBet) / 2;
+
+            // Reset per-round values
+            opponentCurrentRoundBet = 0;
+            opponentCurrentRoundBetCount = 0;
+        }
+
+        private float OddsOfDrawing(int rating, int numberOfCards) {
             return handPercentagesByCardCount[numberOfCards - 1, rating - 1];
         }
 
-        public float GetSpeculativeValueOfHand(int currentRating) {
+        private float GetSpeculativeValueOfHand(int currentRating) {
             return handSpeculativeValues[currentRating - 1];
         }
 
@@ -33,7 +66,7 @@ namespace PokerTournament
             handPercentagesByCardCount = new float[,] {
                 // high card    pair        2 pair      3 of a kind straight    flush       full house  4 of a kind s. flush    r. flush
                 { 1,            0,          0,          0,          0,          0,          0,          0,          0,          0 }, // 1 card hand
-                { .94117f,      .58823f,    0,          0,          0,          0,          0,          0,          0,          0 }, // 2 card hand
+                { .94117f,      .058823f,   0,          0,          0,          0,          0,          0,          0,          0 }, // 2 card hand
                 { .82588f,      .171764f,   0,          .002352f,   0,          0,          0,          0,          0,          0 },
                 { .67611f,      .30424f,    .01037f,    .00921f,    0,          0,          0,          .000048f,   0,          0 },
                 { .501177f,     .422569f,   .047539f,   .021128f,   .003925f,   .001965f,   .001441f,   .00024f,    .0000139f,  .00000154f }
@@ -111,7 +144,8 @@ namespace PokerTournament
 
         public override PlayerAction BettingRound1(List<PlayerAction> actions, Card[] hand)
         {
-            float amountBet = 10;
+            LogPreviousRound();
+            float amountBet = baseBetValue;
             string actionName = "bet";
 
             // Get hand rating
@@ -139,6 +173,7 @@ namespace PokerTournament
                                 // Just call for now
                                 actionName = "call";
                                 amountBet = pa.Amount;
+                                LogOpponentBet(pa.Amount);
                             }
                             else if (pa.ActionName == "check")
                             {
@@ -173,6 +208,7 @@ namespace PokerTournament
                                 // Just call for now
                                 actionName = "call";
                                 amountBet = pa.Amount;
+                                LogOpponentBet(pa.Amount);
                             }
                             else if (pa.ActionName == "check")
                             {
