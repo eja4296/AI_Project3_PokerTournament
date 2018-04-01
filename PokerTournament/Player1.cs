@@ -9,10 +9,12 @@ namespace PokerTournament
     class Player1 : Player
     {
         Random rand;
+        float[] handPercentages;
 
         public Player1(int idNum, string nm, int mny) : base(idNum, nm, mny)
         {
             rand = new Random();
+            handPercentages = new float[]{ 50.1177f, 42.2569f, 4.7539f, 2.1128f, 0.3925f, 0.1965f, 0.1441f, 0.024f, 0.00139f, 0.000154f };
         }
 
         public override PlayerAction BettingRound1(List<PlayerAction> actions, Card[] hand)
@@ -24,35 +26,67 @@ namespace PokerTournament
             Card high;
             int rating = Evaluate.RateAHand(hand, out high);
 
+            /*
+            // Loop through action list to get opponent's last action
+            PlayerAction opponentLastAction;
+            foreach(PlayerAction pa in actions)
+            {
+                if(pa.Name != Name)
+                {
+                    opponentLastAction = pa;
+                    Console.WriteLine("LAST ACTION: " + opponentLastAction.Name + " - " + opponentLastAction.ActionName);
+                }
+            }
+            */
+
             switch (rating)
             {
+                // High card - 50.12%
                 case 1:
                     amountBet = 10;
                     break;
+
+                // 1 Pair - 42.26%
                 case 2:
                     amountBet = 15;
                     break;
+
+                // 2 Pairs - 4.75%
                 case 3:
                     amountBet = 20;
                     break;
+
+                // 3 of a Kind - 2.11%
                 case 4:
                     amountBet = 25;
                     break;
+
+                // Straight - 0.39%
                 case 5:
                     amountBet = 30;
                     break;
+
+                // Flush - 0.20%
                 case 6:
                     amountBet = 40;
                     break;
+
+                // Full House - 0.14%
                 case 7:
                     amountBet = 50;
                     break;
+
+                // 4 of a King - 0.02%
                 case 8:
                     amountBet = 60;
                     break;
+
+                // Straight Flush - 0.001%
                 case 9:
                     amountBet = 80;
                     break;
+
+                // Royal Flush - 0.0001%
                 case 10:
                     amountBet = 100;
                     break;

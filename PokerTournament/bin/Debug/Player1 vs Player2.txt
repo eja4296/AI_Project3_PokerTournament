@@ -3,57 +3,5 @@ Ante for this round: 10
 Betting round 1:
 Player: Player2 Action Phase: Bet1 Action Name: bet Amount: 10
  
-Player: Player1 Action Phase: Bet1 Action Name: bet Amount: 15
- 
-Player: Player2 Action Phase: Bet1 Action Name: call Amount: 0
- 
-After Bet1, pot is 60
- 
-Name: Player2
-Hand Rank: 2 
-Four of Spades Seven of Clubs Seven of Hearts Eight of Clubs Nine of Clubs 
-
- 
-Name: Player1
-Hand Rank: 3 
-Nine of Hearts Nine of Spades Ten of Hearts Ace of Spades Ace of Hearts 
-
- 
-Betting round 2:
-Player: Player2 Action Phase: Bet2 Action Name: bet Amount: 20
- 
-Player: Player1 Action Phase: Bet2 Action Name: bet Amount: 10
- 
-Player: Player2 Action Phase: Bet2 Action Name: call Amount: 0
- 
-After Bet2, pot is 100
- 
-Player1 has a better hand and wins 100
-
-After round 1, player status: 
- Name: Player1 Dealer: True Money: 1065
- Name: Player2 Dealer: False Money: 935
- 
-Starting round 2
-Ante for this round: 10
-Betting round 1:
-Player: Player1 Action Phase: Bet1 Action Name: bet Amount: 10
- 
-Player2 played a bad action of check and forfeits the hand
-Player: Player2 Action Phase: Bet1 Action Name: fold Amount: 0
- 
-After Bet1, pot is 30
- 
-Player2 folded. Other player gets the pot of 30
-
-After round 2, player status: 
- Name: Player1 Dealer: False Money: 1075
- Name: Player2 Dealer: True Money: 925
- 
-Starting round 3
-Ante for this round: 10
-Betting round 1:
-Player: Player2 Action Phase: Bet1 Action Name: bet Amount: 10
- 
 Player: Player1 Action Phase: Bet1 Action Name: bet Amount: 10
  
