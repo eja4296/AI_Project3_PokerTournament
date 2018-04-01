@@ -10,75 +10,115 @@ namespace PokerTournament
     {
         Random rand;
         float[] handPercentages;
+        float[,] handMovementPercentages;
+        float[,] handPercentagesByCardCount;
+        float[] handSpeculativeValues;
+        int previousMoney = -1;
+
+        public float OddsOfDrawing(int rating, int numberOfCards) {
+            return handPercentagesByCardCount[numberOfCards - 1, rating - 1];
+        }
+
+        public float GetSpeculativeValueOfHand(int currentRating) {
+            return handSpeculativeValues[currentRating - 1];
+        }
 
         public Player1(int idNum, string nm, int mny) : base(idNum, nm, mny)
         {
             rand = new Random();
             handPercentages = new float[]{ 50.1177f, 42.2569f, 4.7539f, 2.1128f, 0.3925f, 0.1965f, 0.1441f, 0.024f, 0.00139f, 0.000154f };
+
+            // Odds of getting a hand with a particular rating from a particular hand size
+            // Slightly inaccurate due to not accounting for the fact that some of the cards will already be in our hand
+            handPercentagesByCardCount = new float[,] {
+                // high card    pair        2 pair      3 of a kind straight    flush       full house  4 of a kind s. flush    r. flush
+                { 1,            0,          0,          0,          0,          0,          0,          0,          0,          0 }, // 1 card hand
+                { .94117f,      .58823f,    0,          0,          0,          0,          0,          0,          0,          0 }, // 2 card hand
+                { .82588f,      .171764f,   0,          .002352f,   0,          0,          0,          0,          0,          0 },
+                { .67611f,      .30424f,    .01037f,    .00921f,    0,          0,          0,          .000048f,   0,          0 },
+                { .501177f,     .422569f,   .047539f,   .021128f,   .003925f,   .001965f,   .001441f,   .00024f,    .0000139f,  .00000154f }
+            };
+
+            // Odds of going from the first rating to the second after draw action
+            // We don't discard with a straight or better, so this only goes up to three of a kind
+            // These are probably wrong to some degree, but we don't need perfect accuracy
+            handMovementPercentages = new float[,] {
+                { // from 1 - high card to
+                    .77863f, // high card
+                    .191663f, // pair
+                    OddsOfDrawing(2, 4) * .12234f, // 2 pair
+                    .02708f, // 3 of a kind
+                    0, // straight
+                    0, // flush
+                    0, // full house
+                    0, // 4 of a kind
+                    0, // straight flush
+                    0  // royal flush
+                },
+                { // from 2 - pair to
+                    0, // high card
+                    1 - (OddsOfDrawing(2, 3) + .115102f + OddsOfDrawing(4, 3) + .004897f), // pair
+                    OddsOfDrawing(2, 3), // 2 pair
+                    .115102f, // 3 of a kind
+                    0, // straight
+                    0, // flush
+                    OddsOfDrawing(4, 3), // full house
+                    .004897f, // 4 of a kind
+                    0, // straight flush
+                    0  // royal flush
+                },
+                { // from 3 - two pair to
+                    0, // high card
+                    0, // pair
+                    1 - .0833333f, // 2 pair
+                    0, // 3 of a kind
+                    0, // straight
+                    0, // flush
+                    .0833333f, // full house
+                    0, // 4 of a kind
+                    0, // straight flush
+                    0  // royal flush
+                },
+                { // from 4 - 3 of a kind to
+                    0, // high card
+                    0, // pair
+                    0, // 2 pair
+                    1 - (OddsOfDrawing(2, 2) + .06251f), // 3 of a kind
+                    0, // straight
+                    0, // flush
+                    OddsOfDrawing(2, 2), // full house
+                    .06251f, // 4 of a kind
+                    0, // straight flush
+                    0  // royal flush
+                }, 
+            };
+
+            handSpeculativeValues = new float[10];
+
+            // Calculate the value of a given hand with the possible change from draws taken into account
+            for(int c = 0; c < handMovementPercentages.GetLength(0); c++) {
+                handSpeculativeValues[c] = 0;
+                for(int n = 0; n < handMovementPercentages.GetLength(1); c++) {
+                    handSpeculativeValues[c] += handMovementPercentages[c, n] * (c + 1);
+                }
+            }
+
+            // Straights and better don't discard, so their values are what they already are
+            for(int c = handMovementPercentages.GetLength(0); c < 10; c++) {
+                handSpeculativeValues[c] = c + 1;
+            }
         }
 
         public override PlayerAction BettingRound1(List<PlayerAction> actions, Card[] hand)
         {
-            int amountBet = 10;
+            float amountBet = 10;
             string actionName = "bet";
 
             // Get hand rating
             Card high;
-            int rating = Evaluate.RateAHand(hand, out high);
-
-            // Get hand rating to base bet on
-            switch (rating)
-            {
-                // High card - 50.12%
-                case 1:
-                    amountBet = 10;
-                    break;
-
-                // 1 Pair - 42.26%
-                case 2:
-                    amountBet = 10;
-                    break;
-
-                // 2 Pairs - 4.75%
-                case 3:
-                    amountBet = 12;
-                    break;
-
-                // 3 of a Kind - 2.11%
-                case 4:
-                    amountBet = 15;
-                    break;
-
-                // Straight - 0.39%
-                case 5:
-                    amountBet = 20;
-                    break;
-
-                // Flush - 0.20%
-                case 6:
-                    amountBet = 25;
-                    break;
-
-                // Full House - 0.14%
-                case 7:
-                    amountBet = 30;
-                    break;
-
-                // 4 of a King - 0.02%
-                case 8:
-                    amountBet = 35;
-                    break;
-
-                // Straight Flush - 0.001%
-                case 9:
-                    amountBet = 40;
-                    break;
-
-                // Royal Flush - 0.0001%
-                case 10:
-                    amountBet = 50;
-                    break;
-            }
+            float rating = GetSpeculativeValueOfHand(Evaluate.RateAHand(hand, out high));
+            amountBet *= rating;
+            
 
             // Other player has gone first, but do something
             if (actions.Count != 0)
@@ -168,7 +208,7 @@ namespace PokerTournament
             }
 
             // Player can bet, check, raise, fold, call
-            PlayerAction action = new PlayerAction(Name, "Bet1", actionName, amountBet);
+            PlayerAction action = new PlayerAction(Name, "Bet1", actionName, (int)Math.Round(amountBet));
             return action;
         }
 
