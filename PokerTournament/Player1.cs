@@ -18,17 +18,58 @@ namespace PokerTournament
         public override PlayerAction BettingRound1(List<PlayerAction> actions, Card[] hand)
         {
             int amountBet = 10;
-            
-            PlayerAction action = new PlayerAction(Name, "Bet1", "bet", amountBet);
+            string actionName = "bet";
+
+            // Get hand rating
+            Card high;
+            int rating = Evaluate.RateAHand(hand, out high);
+
+            switch (rating)
+            {
+                case 1:
+                    amountBet = 10;
+                    break;
+                case 2:
+                    amountBet = 15;
+                    break;
+                case 3:
+                    amountBet = 20;
+                    break;
+                case 4:
+                    amountBet = 25;
+                    break;
+                case 5:
+                    amountBet = 30;
+                    break;
+                case 6:
+                    amountBet = 40;
+                    break;
+                case 7:
+                    amountBet = 50;
+                    break;
+                case 8:
+                    amountBet = 60;
+                    break;
+                case 9:
+                    amountBet = 80;
+                    break;
+                case 10:
+                    amountBet = 100;
+                    break;
+            }
+
+            // Player can bet, check, raise, fold, call
+            PlayerAction action = new PlayerAction(Name, "Bet1", actionName, amountBet);
             return action;
         }
 
         public override PlayerAction BettingRound2(List<PlayerAction> actions, Card[] hand)
         {
-            int amountBet = 10;
-            
-            PlayerAction action = new PlayerAction(Name, "Bet2", "bet", amountBet);
-            return action;
+            // Just use the same strategy for round 2
+            PlayerAction action = BettingRound1(actions, hand);
+
+            // create a new PlayerAction object
+            return new PlayerAction(action.Name, "Bet2", action.ActionName, action.Amount);
 
         }
 
