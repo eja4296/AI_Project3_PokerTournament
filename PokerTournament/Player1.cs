@@ -99,7 +99,7 @@ namespace PokerTournament
             for(int c = 0; c < handMovementPercentages.GetLength(0); c++) {
                 handSpeculativeValues[c] = 0;
                 for(int n = 0; n < handMovementPercentages.GetLength(1); n++) {
-                    handSpeculativeValues[c] += handMovementPercentages[c, n] * (c + 1);
+                    handSpeculativeValues[c] += handMovementPercentages[c, n] * (n + 1);
                 }
             }
 
