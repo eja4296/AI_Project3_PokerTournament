@@ -443,22 +443,24 @@ namespace PokerTournament
                 case 3:
                     // Find the location of non-pair card and discard
                     bool match;
-                    int currTestInd = -1;
-                    do
+                    int nonPairInd = -1;
+                    for (int x = 0; x < hand.Length; x++)
                     {
                         match = false;
-                        currTestInd++;
-                        for (int i = 0; i < hand.Length; i++)
+                        for (int y = 0; y < hand.Length; y++)
                         {
-                            if (hand[currTestInd].Value == hand[i].Value)
+                            if (hand[x].Value == hand[y].Value && x != y)
                             {
                                 match = true;
                             }
                         }
+                        if (match == false)
+                        {
+                            nonPairInd = x;
+                        }
                     }
-                    while (match == true);
 
-                    hand[currTestInd] = null;
+                    hand[nonPairInd] = null;
                     cardsToDraw = 1;
 
                     break;
@@ -474,7 +476,7 @@ namespace PokerTournament
                         match = false;
                         for (int y = 0; y < hand.Length; y++)
                         {
-                            if (hand[x].Value == hand[y].Value)
+                            if (hand[x].Value == hand[y].Value && x != y)
                             {
                                 match = true;
                             }
@@ -518,29 +520,32 @@ namespace PokerTournament
 
                 // Four of a Kind
                 case 8:
-                    // Find the location of non-pair card and discard
-                    currTestInd = -1;
-                    do
+                    // Find the location of non-four card and discard
+                    nonPairInd = -1;
+
+                    for (int x = 0; x < hand.Length; x++)
                     {
                         match = false;
-                        currTestInd++;
-                        for (int i = 0; i < hand.Length; i++)
+                        for (int y = 0; y < hand.Length; y++)
                         {
-                            if (hand[currTestInd].Value == hand[i].Value)
+                            if (hand[x].Value == hand[y].Value && x != y)
                             {
                                 match = true;
                             }
                         }
+                        if (match == false)
+                        {
+                            nonPairInd = x;
+                        }
                     }
-                    while (match == true);
 
-                    if (hand[currTestInd].Value > 10)
+                    if (hand[nonPairInd].Value > 10)
                     {
                         cardsToDraw = 0;
                     }
                     else
                     {
-                        hand[currTestInd] = null;
+                        hand[nonPairInd] = null;
                         cardsToDraw = 1;
                     }
                     break;
