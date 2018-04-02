@@ -224,9 +224,58 @@ namespace PokerTournament
                                 // Do nothing
                             }
                         }
+                        else
+                        {
+                            actionName = "bet";
+                        }
 
+                    }
+                }
+                
+            }
+            // Our player goes first, must check or bet
+            else
+            {
+                order = 1;
+                actionName = "bet";
+            }
+
+            // Player can bet, check, raise, fold, call
+            PlayerAction action = new PlayerAction(Name, "Bet1", actionName, (int)Math.Round(amountBet));
+            return action;
+        }
+
+        public override PlayerAction BettingRound2(List<PlayerAction> actions, Card[] hand)
+        {
+            /*
+            // Just use the same strategy for round 2
+            PlayerAction action = BettingRound1(actions, hand);
+
+            // create a new PlayerAction object
+            return new PlayerAction(action.Name, "Bet2", action.ActionName, action.Amount);
+            */
+
+            float amountBet = baseBetValue;
+            string actionName = "bet";
+
+            // Get hand rating
+            Card high;
+            float rating = Evaluate.RateAHand(hand, out high);
+            amountBet *= rating;
+
+
+            // Other player has gone first, but do something
+            if (actions.Count != 0)
+            {
+
+                foreach (PlayerAction pa in actions)
+                {
+
+                    // If the action is not our player's, and the action is not draw
+                    if (pa.Name != "Player1" && pa.ActionPhase != "Draw")
+                    {
                         // For Bet2
-                        else if (pa.ActionPhase == "Bet2")
+                        if (pa.ActionPhase == "Bet2")
                         {
                             // Other player has bet
                             if (pa.ActionName == "bet")
@@ -288,7 +337,7 @@ namespace PokerTournament
 
                     }
                 }
-                
+
             }
             // Our player goes first, must check or bet
             else
@@ -298,17 +347,8 @@ namespace PokerTournament
             }
 
             // Player can bet, check, raise, fold, call
-            PlayerAction action = new PlayerAction(Name, "Bet1", actionName, (int)Math.Round(amountBet));
+            PlayerAction action = new PlayerAction(Name, "Bet2", actionName, (int)Math.Round(amountBet));
             return action;
-        }
-
-        public override PlayerAction BettingRound2(List<PlayerAction> actions, Card[] hand)
-        {
-            // Just use the same strategy for round 2
-            PlayerAction action = BettingRound1(actions, hand);
-
-            // create a new PlayerAction object
-            return new PlayerAction(action.Name, "Bet2", action.ActionName, action.Amount);
 
         }
 
