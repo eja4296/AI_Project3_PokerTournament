@@ -18,6 +18,7 @@ namespace PokerTournament
         float opponentCurrentRoundBetCount = 0;
         int previousMoney = -1;
         int previousHandRating = 0;
+        int order;
 
         private void LogOpponentBet(float amt) {
             opponentCurrentRoundBet += amt;
@@ -60,6 +61,7 @@ namespace PokerTournament
         {
             rand = new Random();
             handPercentages = new float[]{ 50.1177f, 42.2569f, 4.7539f, 2.1128f, 0.3925f, 0.1965f, 0.1441f, 0.024f, 0.00139f, 0.000154f };
+            order = 0;
 
             // Odds of getting a hand with a particular rating from a particular hand size
             // Slightly inaccurate due to not accounting for the fact that some of the cards will already be in our hand
@@ -157,6 +159,7 @@ namespace PokerTournament
             // Other player has gone first, but do something
             if (actions.Count != 0)
             {
+                
                 foreach(PlayerAction pa in actions)
                 {
 
@@ -169,25 +172,49 @@ namespace PokerTournament
                             // Other player has bet
                             if (pa.ActionName == "bet")
                             {
-                                // player must call, raise, or fold
-                                // Just call for now
-                                actionName = "call";
-                                amountBet = pa.Amount;
+                                order = 2;
+                                // Log the opponent's bet
                                 LogOpponentBet(pa.Amount);
+                                // player must call, raise, or fold
+                                // if the amount the other player bet is greater than what we would bet
+                                if (opponentCurrentRoundBet > amountBet && rating < 2f)
+                                {
+                                    actionName = "fold";
+                                }
+                                else if (opponentCurrentRoundBet == amountBet || opponentCurrentRoundBet > amountBet && rating >= 2f)
+                                {
+                                    actionName = "call";
+                                }
+                                else
+                                {
+                                    actionName = "raise";
+                                }
                             }
                             else if (pa.ActionName == "check")
                             {
+                                order = 2;
                                 // Player must bet
                                 actionName = "bet";
                             }
                             else if (pa.ActionName == "call")
                             {
-                                // Do nothing?
+                                // Log the opponent's bet
+                                LogOpponentBet(pa.Amount);
+                                // Do nothing else
                             }
                             else if (pa.ActionName == "raise")
                             {
+                                // Log the oppoent's bet
+                                LogOpponentBet(pa.Amount + amountBet);
                                 // Player should call or fold
-                                // Just call for now
+                                if (opponentCurrentRoundBet + amountBet > amountBet && rating < 2f)
+                                {
+                                    actionName = "fold";
+                                }
+                                else if (opponentCurrentRoundBet + amountBet > amountBet && rating >= 2f)
+                                {
+                                    actionName = "call";
+                                }
                                 actionName = "call";
                                 amountBet = pa.Amount;
                             }
@@ -199,16 +226,27 @@ namespace PokerTournament
                         }
 
                         // For Bet2
-                        if (pa.ActionPhase == "Bet2")
+                        else if (pa.ActionPhase == "Bet2")
                         {
                             // Other player has bet
                             if (pa.ActionName == "bet")
                             {
-                                // player must call, raise, or fold
-                                // Just call for now
-                                actionName = "call";
-                                amountBet = pa.Amount;
+                                // Log the opponent's bet
                                 LogOpponentBet(pa.Amount);
+                                // player must call, raise, or fold
+                                // if the amount the other player bet is greater than what we would bet
+                                if (opponentCurrentRoundBet > amountBet && rating < 3f)
+                                {
+                                    actionName = "fold";
+                                }
+                                else if (opponentCurrentRoundBet == amountBet || opponentCurrentRoundBet > amountBet && rating >= 3f)
+                                {
+                                    actionName = "call";
+                                }
+                                else
+                                {
+                                    actionName = "raise";
+                                }
                             }
                             else if (pa.ActionName == "check")
                             {
@@ -217,12 +255,23 @@ namespace PokerTournament
                             }
                             else if (pa.ActionName == "call")
                             {
-                                // Do nothing?
+                                // Log the opponent's bet
+                                LogOpponentBet(pa.Amount);
+                                // Do nothing else
                             }
                             else if (pa.ActionName == "raise")
                             {
+                                // Log the oppoent's bet
+                                LogOpponentBet(pa.Amount + amountBet);
                                 // Player should call or fold
-                                // Just call for now
+                                if (opponentCurrentRoundBet + amountBet > amountBet && rating < 3f)
+                                {
+                                    actionName = "fold";
+                                }
+                                else if (opponentCurrentRoundBet + amountBet > amountBet && rating >= 3f)
+                                {
+                                    actionName = "call";
+                                }
                                 actionName = "call";
                                 amountBet = pa.Amount;
                             }
@@ -232,6 +281,10 @@ namespace PokerTournament
                                 // Do nothing
                             }
                         }
+                        else
+                        {
+                            actionName = "bet";
+                        }
 
                     }
                 }
@@ -240,6 +293,7 @@ namespace PokerTournament
             // Our player goes first, must check or bet
             else
             {
+                order = 1;
                 actionName = "bet";
             }
 
